@@ -1,0 +1,63 @@
+h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 0 0 0px;
+}
+.section-01 {
+    padding: 40px 0px;
+}
+
+hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.hr01 {
+    border-top: 1px dashed #eee;
+}
+
+.page-header {
+    padding-bottom: 9px;
+    margin: 0px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.black{
+    color: #000;
+}
+
+.red{
+    color: #ed1c24;
+}
+
+.form-dos {
+    border-left: 3px solid #ed1c24;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #ed1c24;
+    border-color: #ed1c24;
+    width: auto;
+}
+
+.btn-danger:hover {
+    color: #ed1c24;
+    background-color: #ffffff;
+    border-color: #ed1c24;
+}
+
+@media(max-width:1024px){
+
+}
+@media(max-width:768px){
+    
+}
+@media(max-width:414px){
+    
+}

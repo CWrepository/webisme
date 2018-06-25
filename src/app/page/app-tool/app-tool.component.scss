@@ -1,0 +1,35 @@
+.black {
+    color: #1F1F1F;
+}
+
+.red {
+    color: #EB1A24;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.text-black {
+    color: #333333;
+}
+
+.section-06 {
+    padding: 40px 0px;
+    background: #fcfcfc;
+}
+
+.d-box-warning {
+    display: initial;
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.42857143;
+    color: #ffffff;
+    background-color: #009688;
+    border: 1px solid #009688;
+    border-radius: 5px;
+    -webkit-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}

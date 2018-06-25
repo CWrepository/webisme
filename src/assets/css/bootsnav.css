@@ -48,7 +48,7 @@ nav.navbar.bootsnav{
     background-color: #e2e2de;
     border: none;
     border-bottom: solid 1px #e0e0e0;
-    z-index: 9;
+    z-index: 99;
 }
 
 nav.navbar.bootsnav ul.nav > li > a{

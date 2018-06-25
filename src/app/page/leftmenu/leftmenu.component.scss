@@ -1,0 +1,37 @@
+.black {
+    color: #1F1F1F;
+}
+
+.red {
+    color: #EB1A24;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.text-black {
+    color: #333333;
+}
+
+
+ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.h-tap {
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    border-left: 3px solid #ed1c24;
+}
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+    z-index: 2;
+    color: #fff;
+    background-color: #3f8a0d;
+    border-color: #3f8a0d;
+}
+
