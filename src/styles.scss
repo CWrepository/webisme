@@ -1,60 +1,79 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import "~font-awesome/css/font-awesome.min.css";
-
 @import url('https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800');
-
 body {
     font-family: 'Prompt', sans-serif;
     position: relative;
-	font-size:14px;
-	line-height:24px;
-	color:#6f6f6f;
+    font-size: 14px;
+    line-height: 24px;
+    color: #6f6f6f;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
     font-family: 'Prompt', sans-serif;
     font-weight: 500;
     line-height: 1;
     color: inherit;
 }
 
-.font-kanit{
-  font-family: 'Kanit', sans-serif;
+.font-kanit {
+    font-family: 'Kanit', sans-serif;
 }
 
-.f-100{
-   font-weight: 100;  
-}
-.f-200{
-  font-weight: 200;  
-}
-.f-300{
-  font-weight: 300;  
-}
-.f-400{
-  font-weight: 400;  
-}
-.f-500{
-  font-weight: 500;  
-}
-.f-600{
-  font-weight: 600;  
+.f-100 {
+    font-weight: 100;
 }
 
+.f-200 {
+    font-weight: 200;
+}
+
+.f-300 {
+    font-weight: 300;
+}
+
+.f-400 {
+    font-weight: 400;
+}
+
+.f-500 {
+    font-weight: 500;
+}
+
+.f-600 {
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: none;
+}
 
 @media (min-width: 768px) {
     .container {
-      width: 750px;
+        width: 750px;
     }
-  }
-  @media (min-width: 992px) {
-    .container {
-      width: 970px;
-    }
-  }
-  @media (min-width: 1200px) {
-    .container {
-      width: 1200px;
-    }
-  }
+}
 
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
