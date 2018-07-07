@@ -1,0 +1,93 @@
+section {
+  padding: 40px 0px;
+  background-color: #f5f5f5;
+}
+
+.band {
+  margin-bottom: -9%;
+  /*&--red,*/
+  /*&--purple,*/
+}
+
+.band:first-child {
+  margin-top: -5%;
+}
+
+.band--red .band-skew {
+  background-color: #E8E8E8;
+  background-size: cover;
+}
+
+.band--green .band-skew {
+  background-color: #BCBCBC;
+  background-size: cover;
+}
+
+.band--flat-bottom {
+  overflow: hidden;
+}
+
+.band-skew {
+  position: relative;
+  z-index: 10;
+  padding: 7% 0;
+  margin-bottom: -5%;
+}
+
+.band-skew--right {
+  -webkit-transform: skewY(10deg);
+  transform: skewY(10deg);
+}
+
+.band-skew--right .band-inner {
+  -webkit-transform: skewY(-10deg);
+  transform: skewY(-10deg);
+}
+
+.band-skew--left {
+  -webkit-transform: skewY(-10deg);
+  transform: skewY(-10deg);
+}
+
+.band-skew--left .band-inner {
+  -webkit-transform: skewY(10deg);
+  transform: skewY(10deg);
+}
+
+.band-inner {
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  z-index: 20;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.band--flat-bottom .band-inner {
+  margin-bottom: 0;
+}
+
+.band-inner *:last-child {
+  margin-bottom: 0;
+}
+
+.band + .band .band-skew {
+  padding-top: 18.415%;
+}
+
+/* debug */
+.debug .band-skew {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+/* house keeping */
+p {
+  margin-top: 0;
+}
+
+/* assets/images/bg-about.jpg */
+.kak-bg01 {
+  background: url(../../../assets/images/bg-about.jpg) no-repeat center;
+  background-size: cover;
+  padding-bottom: 260px;
+}

@@ -52,7 +52,7 @@
     height: 433px;
     padding: 22px 22px 117px 22px;
     text-align: center;
-    background: url(assets/images/pc.png) no-repeat center;
+    background: url(../../../assets/images/pc.png) no-repeat center;/* assets/images/pc.png */
     background-size: cover;
 }
 
@@ -327,7 +327,7 @@ figure.snip0019:hover figcaption::before {
         height: 347px;
         padding: 22px 22px 117px 22px;
         text-align: center;
-        background: url(assets/images/pc.png) no-repeat center;
+        background: url(../../../assets/images/pc.png) no-repeat center;/* assets/images/pc.png */
         background-size: cover;
     }
 }

@@ -6,6 +6,12 @@
 			
 			<div class="row">
 
+					<img src="{{ user.photoUrl }}">
+					<div>
+					  <h4>{{ user.name }}</h4>
+					  <p>{{ user.email }}</p>
+					</div>
+
 
 
 
@@ -41,8 +47,8 @@
 						</div>
 						<div class="clearfix"></div>
 
-						<a class="btn btn-danger btn-lg" href="" title="เข้าสู่ระบบ">เข้าสู่ระบบ</a>
-						<a class="btn btn-danger btn-lg" href="" title="ล้างข้อมูล">ล้างข้อมูล</a>
+						<a class="btn btn-danger btn-lg" (click)="signInWithGoogle()" title="เข้าสู่ระบบ">เข้าสู่ระบบ</a>
+						<a class="btn btn-danger btn-lg" (click)="signInWithFB()" title="ล้างข้อมูล">ล้างข้อมูล</a>
 
 					</div>
 

@@ -121,24 +121,27 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-menu">
           <ul class="nav navbar-nav navbar-left">
-            <li>
-              <a class="hvr-menu" href="home">หน้าแรก</a>
+            <li >
+              <a class="hvr-menu" href="" >หน้าแรก</a>
+            </li>
+            <li *ngFor="let menu of menuList ">
+              <a class="hvr-menu"  (click)="gotoPage(menu.link)" >{{menu.title}}</a>
+            </li>
+            <!-- <li>
+              <a class="hvr-menu" href="./about">เว็บไซต์พร้อมใช้</a>
             </li>
             <li>
-              <a class="hvr-menu" href="about">เว็บไซต์พร้อมใช้</a>
+              <a class="hvr-menu" href="./price">ราคาเว็บแพ็กเกจ</a>
             </li>
             <li>
-              <a class="hvr-menu" href="price">ราคาเว็บแพ็กเกจ</a>
+              <a class="hvr-menu" href="./new">ข่าวอัพเดท</a>
             </li>
             <li>
-              <a class="hvr-menu" href="new">ข่าวอัพเดท</a>
+              <a class="hvr-menu" href="./help">ช่วยเหลือ</a>
             </li>
             <li>
-              <a class="hvr-menu" href="help">ช่วยเหลือ</a>
-            </li>
-            <li>
-              <a class="hvr-menu" href="contact">ติดต่อเรา</a>
-            </li>
+              <a class="hvr-menu" href="./contact">ติดต่อเรา</a>
+            </li> -->
           </ul>
         </div>
 
@@ -150,15 +153,15 @@
       </div>
 
       <div class="col-xs-6 hidden-lg hidden-md">
-        <a href="login" title="เข้าสู่ระบบ">
-          <div class="row">
+        <a (click)="gotoPage('login')" title="เข้าสู่ระบบ">เข้าสู่ระบบ
+          <!-- <div class="row">
             <span class="d-box-red"><i class="fa fa-sign-in"></i> เข้าสู่ระบบ </span> 
-          </div>
+          </div> -->
         </a>
       </div>
 
       <div class="col-xs-6 hidden-lg hidden-md">
-        <a href="register" title="สมัครสมาชิก">
+        <a (click)="gotoPage('register')" title="สมัครสมาชิก">
           <div class="row">
             <span class="d-box-green"><i class="fa fa-user" aria-hidden="true"></i> สมัครสมาชิก </span> 
           </div>

@@ -25,6 +25,21 @@ import { LeftmenuComponent } from './page/leftmenu/leftmenu.component';
 import { OptionsComponent } from './page/options/options.component';
 import { AppToolComponent } from './page/app-tool/app-tool.component';
 
+import { SocialLoginModule, AuthServiceConfig } from "angular4-social-login";
+import { GoogleLoginProvider, FacebookLoginProvider } from "angular4-social-login";
+
+
+let config = new AuthServiceConfig([
+  {
+    id: GoogleLoginProvider.PROVIDER_ID,
+    provider: new GoogleLoginProvider("706567685391-799mdb8ds5ihdjh8b93p9qk3salkuqo3.apps.googleusercontent.com")
+  },
+  {
+    id: FacebookLoginProvider.PROVIDER_ID,
+    provider: new FacebookLoginProvider("411401722712515")
+  }
+]);
+
 
 
 
@@ -56,7 +71,8 @@ import { AppToolComponent } from './page/app-tool/app-tool.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SocialLoginModule.initialize(config)
   ],
   providers: [],
   bootstrap: [AppComponent]
